@@ -12,6 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+    <!--meta SEO-->
+    <meta name="description" content="la desciption du site !! mettre les bons mots clés">
+    <meta name="keywords" content="webdesign,webdeveloppeur,developpeur,front-end,back-end">
+    <!--meta resolution selon mobile-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 </head>
 <!--header-->
 
@@ -64,21 +70,21 @@
         <div class="container about">
             <div class="columns">
                 <div class="column about-single-element">
-                    <i class="fa-solid fa-code fa-flip fa-2xl"></i>
+                    <span class="fa-solid fa-code fa-flip fa-2xl"></span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magnam doloribus aperiam quis
                         repellendus sunt quae, eius odio quas, minima nesciunt perferendis saepe! Magni aspernatur
                         voluptatum, nemo nihil, id ipsum eveniet doloribus et accusantium illum quo? Cum sint dicta
                         voluptatem amet, officia facere ducimus quis.</p>
                 </div>
                 <div class="column about-single-element">
-                    <i class="fa-solid fa-mug-hot fa-shake fa-2xl"></i>
+                    <span class="fa-solid fa-mug-hot fa-shake fa-2xl"></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ducimus architecto obcaecati.
                         Corporis magnam suscipit odit architecto rerum! Architecto ea maiores voluptatibus, laudantium
                         unde inventore rerum in quae pariatur eveniet itaque tenetur, illo delectus dolor fuga sequi.
                         Quod numquam cumque ab obcaecati suscipit vitae a.</p>
                 </div>
                 <div class="column about-single-element">
-                    <i class="fa-solid fa-motorcycle fa-bounce fa-2xl"></i>
+                    <span class="fa-solid fa-motorcycle fa-bounce fa-2xl"></span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cupiditate dolor aspernatur et sed
                         labore molestiae nemo illo similique perferendis velit dolorem rerum asperiores eius omnis, odit
                         placeat doloribus iusto sapiente deleniti accusamus nobis amet aperiam. Sed accusantium
@@ -140,28 +146,29 @@
                     <div class="field">
                         <label class="label">Votre nom</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="Florent" name="name">
+                            <input class="input" id="name" type="text" placeholder="Florent" name="name">
                         </div>
                     </div>
                     <div class="field">
                         <label class="label">Votre prénom</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="Patrick" name="first-name">
+                            <input class="input" id="firstname" type="text" placeholder="Patrick" name="firstname">
                         </div>
                     </div>
                     <div class="field">
                         <label class="label">Votre email</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="coucou@cmoi.com" name="email">
+                            <input class="input" id="email" type="text" placeholder="coucou@cmoi.com" name="email">
                         </div>
                     </div>
                     <div class="field">
                         <label class="label">Votre message</label>
                         <div class="control">
-                            <textarea class="textarea" placeholder="C'est à toi de jouer" name="message"></textarea>
+                            <textarea class="textarea" id="message" placeholder="C'est à toi de jouer" name="message"></textarea>
                         </div>
                     </div>
                 </form>
+                <button class="button is-link" id="send-email">Envoyez !</button>
             </div>
             <div class="footer-informations">
                 <p>35 rue du code web</p>
@@ -169,18 +176,22 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <i class="fa-brands fa-facebook"></i>
+                            <span class="fa-brands fa-facebook"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#">
+                            <span class="fa-brands fa-linkedin"></span>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
+                            <span class="fa-brands fa-tiktok"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-brands fa-instagram"></span>
                         </a>
                     </li>
                 </ul>

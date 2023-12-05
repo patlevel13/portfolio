@@ -96,5 +96,10 @@ body{
     font-size: 3rem;
     text-align: center;
 }
-
+/* responsive exemple*/
+@media screen and (max-width: 800px) {
+    #open-modal {
+        display: none;
+    }
+}
 
