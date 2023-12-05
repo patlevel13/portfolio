@@ -14,7 +14,7 @@ body{
     height: 70px;
     line-height: 70px;
     background-color: rgba(0, 0, 0, 0);
-    position: fixed;
+
     top: 0;
 }
 
@@ -59,6 +59,7 @@ body{
 .about .about-single-element{
     text-align: center;
 }
+
 .about .about-single-element p{
     text-align: left;
     margin-top: 20px;
@@ -66,4 +67,34 @@ body{
 .asus{
     width: 100%;
 }
+/*contact*/
+.inscription{
+    padding: 50px;
+}
+
+.footer .footer-informations{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer .footer-informations ul{
+    padding: 0;
+}
+.footer .footer-informations ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 30px 0 50px 0;
+}
+/* modal*/
+.own-modal{
+    padding: 120px 50px 0 0;
+}
+.modal-background{
+    background-color: #000;
+}
+
+.modal-card-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
 
