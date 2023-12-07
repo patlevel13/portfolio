@@ -113,9 +113,6 @@ body{
 .own-modal{
     padding: 120px 50px 0 0;
 }
-.modal-background{
-    background-color: #000;
-}
 
 .modal-card-title {
     font-size: 3rem;
