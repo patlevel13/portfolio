@@ -4,18 +4,18 @@
     font-family: 'Montserrat', sans-serif ;
 }
 body{
-    background-color: chocolate;
+    background: radial-gradient(rgb(173, 127, 67),chocolate);
 }
+
 /*header*/
 .header {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
     height: 70px;
-    line-height: 70px;
-    background-color: rgba(0, 0, 0, 0);
-
+    line-height: 50px;
     top: 0;
+    background-color: #000;
 }
 
 .header .header-logo {
@@ -23,11 +23,14 @@ body{
     font-family: 'Montserrat', sans-serif;
     float: left;
     margin-left: 30px;
+    font-size: 2rem;
+    margin-top: 10px;
 }
 
 .header .header-menu {
     float: right;
     margin-right: 30px;
+    margin-top: 10px;
 }
 
 .header .header-menu a {
@@ -38,23 +41,26 @@ body{
 .header .header-menu a:hover {
     color: #a89ee6;
 }
+
 /*banner*/
-.banner{
-    margin-top: -20px;
-}
 .banner .banner-img{
     position: relative;
 }
 .banner .banner-content{
-
+    margin-top: 100px;
     width: 100%;
     text-align: center;
-    top: 25%;
 }
 .banner .banner-content h1,
 .banner .banner-content h2{
     color: #fff;
 }
+.subtitle{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
 /*about*/
 .about .about-single-element{
     text-align: center;
@@ -67,22 +73,41 @@ body{
 .asus{
     width: 100%;
 }
+
+
 /*contact*/
-.inscription{
-    padding: 50px;
-}
+
 
 .footer .footer-informations{
     text-align: center;
-    margin-top: 30px;
 }
-.footer .footer-informations ul{
-    padding: 0;
-}
+
 .footer .footer-informations ul li{
     display: inline-block;
     list-style-type: none;
-    margin-top: 30px 0 50px 0;
+    width: 100px;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+/*test*/
+.footer{
+    background-color: transparent;
+    padding:  5% 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*resaux sociaux*/
+.resaux-sociaux {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.resaux-sociaux a{
+    position: relative;
+    margin: 0 20px;
+    font-size: 3rem;
+    height: 100px;
+    width:100px ;
 }
 /* modal*/
 .own-modal{
@@ -97,9 +122,8 @@ body{
     text-align: center;
 }
 /* responsive exemple*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 400px) {
     #open-modal {
         display: none;
     }
 }
-
