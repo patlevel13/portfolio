@@ -10,7 +10,7 @@ if($_POST) {
     $headers ="Form: $name<$email>\r\nReply-to : $name<$email>\nX-Mailer:PHP";
 /* modif email*/
     $subject="$object";
-    $destinataire="coucou@cmoi.com";
+    $destinataire="patleviok@gmail.com";
     $body="$message";
 if(mail($destinataire,$subject,$body,$headers)) {
     $response['satus'] ='success';
@@ -19,6 +19,6 @@ if(mail($destinataire,$subject,$body,$headers)) {
         $response['satus'] ='error';
         $response['msg'] = 'Something went wrong';
     }
-    echo json_encode($response)
+    echo json_encode($response);
 }
 ?>
