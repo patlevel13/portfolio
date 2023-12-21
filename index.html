@@ -1,225 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=4.0,user-scalable=yes">
-    <title>Mon Portfolio</title>
-    <!---->
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
-    <link rel="stylesheet" href="src/css/main.css" />
-    <!---->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
-    ></script>
-    
-    <!--meta SEO-->
-    <meta
-      name="description"
-      content="la desciption du site !! mettre les bons mots clés"
-    />
-    <meta
-      name="keywords"
-      content="webdesign,webdeveloppeur,developpeur,front-end,back-end"
-    />
-  </head>
-  <!--header-->
 
-  <body>
-    <div class="block" id="accueil">
-      <header class="header" >
-        <p class="header-logo" id="logo">Mon Portfolio</p>
-        <nav class="header-menu" id="header-menu">
-          <a href="#accueil" class="link">Accueil</a>
-          <a href="#apropos" class="link">A propos</a>
-          <a href="#portfolio" class="link">Mon Portfolio</a>
-          <a href="#footer" class="link">Contact</a>
-          <a href="src/img/CV_Patrick.pdf" target="_blank">Mon CV</a>
-          
-        </nav>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=4.0,user-scalable=yes" />
+  <title>Mon Portfolio</title>
+  <!---->
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" aria-disabled="true" />
+  <link rel="stylesheet" href="src/css/main.css" />
+  <!---->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+
+  <!--meta SEO-->
+  <meta name="description" content="la desciption du site !! mettre les bons mots clés" />
+  <meta name="keywords" content="webdesign,webdeveloppeur,developpeur,front-end,back-end" />
+</head>
+<!--header-->
+
+<body>
+  <div class="block" id="accueil">
+    <header class="header">
+      <p class="header-logo" id="logo">Mon Portfolio</p>
+      <nav class="header-menu" id="header-menu">
+        <a href="#accueil" class="link">Accueil</a>
+        <a href="#apropos" class="link">A propos</a>
+        <a href="#portfolio" class="link">Mon Portfolio</a>
+        <a href="#footer" class="link">Contact</a>
+        <a href="src/img/CV_Patrick.pdf" target="_blank">Mon CV</a>
+      </nav>
+    </header>
+  </div>
+
+  <!--banner-->
+  <div class="block">
+    <div class="banner">
+      <img src="src/img/pexels-ketut-subiyanto-min.webp" alt="ordimateur" class="banner-image" />
+      <div class="banner-content">
+        <h1 class="title is-1">Bienvenue sur mon portfolio</h1>
+        <h2 class="subtitle">Découvrez mes travaux et mon univers</h2>
+        <button class="button is-link" id="open-modal">Galerie Photos</button>
+      </div>
     </div>
+  </div>
 
-    <!--banner-->
-    <div class="block">
-      <div class="banner">
-        <img
-          src="src/img/pexels-ketut-subiyanto-4559527.jpg"
-          alt="ordimateur"
-          class="banner-image"
-        />
-        <div class="banner-content">
-          <h1 class="title is-1">Bienvenue sur mon portfolio</h1>
-          <h2 class="subtitle">Découvrez mes travaux et mon univers</h2>
-          <button class="button is-link" id="open-modal">Galerie Photos</button>
+  <!--modal-->
+  <div class="modal own-modal" id="modal-to-open">
+    <div class="modal-background" ></div>
+    <!-- <canvas id="matrix"></canvas> -->
+    <div class="modal-content" >
+      <button class="delete is-large" aria-label="close" id="close-modal"></button>
+      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30" effect="fade"
+        navigation="true">
+        
+        <swiper-slide>
+          <img src="src/caroussel/a-min.jpg" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="src/caroussel/b-min.jpg" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="src/caroussel/c-min.jpg" alt="" />
+
+        </swiper-slide>
+        <swiper-slide>
+          <img src="src/caroussel/d-min.jpg" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="src/caroussel/e-min.jpg" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="src/caroussel/f-min.jpg" alt="" />
+        </swiper-slide>
+
+      </swiper-container>
+    </div>
+  </div>
+
+  <!--about-->
+  <div class="block">
+    <h2 class="subtitle heading-site" id="apropos">A propos</h2>
+    <div class="container about">
+      <div class="columns">
+        <div class="column about-single-element">
+          <span class="fa-solid fa-code fa-flip fa-2xl"></span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            magnam doloribus aperiam quis repellendus sunt quae, eius odio
+            quas, minima nesciunt perferendis saepe! Magni aspernatur
+            voluptatum, nemo nihil, id ipsum eveniet doloribus et accusantium
+            illum quo? Cum sint dicta voluptatem amet, officia facere ducimus
+            quis.
+          </p>
+        </div>
+        <div class="column about-single-element">
+          <span class="fa-solid fa-mug-hot fa-shake fa-2xl"></span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+            ducimus architecto obcaecati. Corporis magnam suscipit odit
+            architecto rerum! Architecto ea maiores voluptatibus, laudantium
+            unde inventore rerum in quae pariatur eveniet itaque tenetur, illo
+            delectus dolor fuga sequi. Quod numquam cumque ab obcaecati
+            suscipit vitae a.
+          </p>
+        </div>
+        <div class="column about-single-element">
+          <span class="fa-solid fa-motorcycle fa-bounce fa-2xl"></span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            cupiditate dolor aspernatur et sed labore molestiae nemo illo
+            similique perferendis velit dolorem rerum asperiores eius omnis,
+            odit placeat doloribus iusto sapiente deleniti accusamus nobis
+            amet aperiam. Sed accusantium repudiandae qui. Nobis suscipit
+            assumenda itaque non?
+          </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--modal-->
-    <div class="modal own-modal" id="modal-to-open">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <button class="delete is-large" aria-label="close" id="close-modal"></button>
-        <p class="image is-4by3">
-          <img src="src/caroussel/c.jpg" alt="">
-        </p>
-        <p class="image is-4by3">
-          <img src="src/caroussel/d.jpg" alt="">
-        </p>
-          
-          <!-- Content ... -->
-      </div>
-    </div>
-
-    <!--about-->
-    <div class="block">
-      <h2 class="subtitle heading-site" id="apropos">A propos</h2>
-      <div class="container about">
-        <div class="columns">
-          <div class="column about-single-element">
-            <span class="fa-solid fa-code fa-flip fa-2xl"></span>
+  <!--portfolio-->
+  <div class="block">
+    <h2 class="subtitle heading-site" id="portfolio">Mon portfolio</h2>
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-4 is-vertical is-parent">
+          <div class="tile is-child box">
+            <p class="title">One</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              magnam doloribus aperiam quis repellendus sunt quae, eius odio
-              quas, minima nesciunt perferendis saepe! Magni aspernatur
-              voluptatum, nemo nihil, id ipsum eveniet doloribus et accusantium
-              illum quo? Cum sint dicta voluptatem amet, officia facere ducimus
-              quis.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+              alias animi architecto commodi soluta dolore quisquam eveniet
+              dignissimos veniam quos.
             </p>
           </div>
-          <div class="column about-single-element">
-            <span class="fa-solid fa-mug-hot fa-shake fa-2xl"></span>
+        </div>
+        <div class="tile is-parent">
+          <div class="tile is-child box">
+            <img src="src/img/Asus-min.jpg" alt="" class="asus" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---->
+  <div class="block">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <div class="tile is-child box">
+            <img src="src/img/Asus-min.jpg" alt="" class="asus" />
+          </div>
+        </div>
+        <div class="tile is-4 is-vertical is-parent">
+          <div class="tile is-child box">
+            <p class="title">One</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-              ducimus architecto obcaecati. Corporis magnam suscipit odit
-              architecto rerum! Architecto ea maiores voluptatibus, laudantium
-              unde inventore rerum in quae pariatur eveniet itaque tenetur, illo
-              delectus dolor fuga sequi. Quod numquam cumque ab obcaecati
-              suscipit vitae a.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequuntur, tempore, ut ex non soluta reprehenderit provident
+              in dignissimos molestias minus quibusdam sit? Recusandae, vitae
+              porro!
             </p>
           </div>
-          <div class="column about-single-element">
-            <span class="fa-solid fa-motorcycle fa-bounce fa-2xl"></span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              cupiditate dolor aspernatur et sed labore molestiae nemo illo
-              similique perferendis velit dolorem rerum asperiores eius omnis,
-              odit placeat doloribus iusto sapiente deleniti accusamus nobis
-              amet aperiam. Sed accusantium repudiandae qui. Nobis suscipit
-              assumenda itaque non?
-            </p>
-          </div>
         </div>
       </div>
     </div>
-
-    <!--portfolio-->
-    <div class="block">
-      <h2 class="subtitle heading-site" id="portfolio">Mon portfolio</h2>
-      <div class="container">
-        <div class="tile is-ancestor">
-          <div class="tile is-4 is-vertical is-parent">
-            <div class="tile is-child box">
-              <p class="title">One</p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-                alias animi architecto commodi soluta dolore quisquam eveniet
-                dignissimos veniam quos.
-              </p>
-            </div>
-          </div>
-          <div class="tile is-parent">
-            <div class="tile is-child box">
-              <img src="src/img/Asus.jpg" alt="" class="asus" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!---->
-    <div class="block">
-      <div class="container">
-        <div class="tile is-ancestor">
-          <div class="tile is-parent">
-            <div class="tile is-child box">
-              <img src="src/img/Asus.jpg" alt="" class="asus" />
-            </div>
-          </div>
-          <div class="tile is-4 is-vertical is-parent">
-            <div class="tile is-child box">
-              <p class="title">One</p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Consequuntur, tempore, ut ex non soluta reprehenderit provident
-                in dignissimos molestias minus quibusdam sit? Recusandae, vitae
-                porro!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
 
   <!--contact-->
   <div class="block">
-
     <div class="footer" id="footer">
-        <h2 class="heading-site">Contactez-moi</h2>
-        <div class="footer-contact-form">
-            <form action="">
-                <div class="field">
-                    <label class="label">Votre nom</label>
-                    <div class="control">
-                        <input class="input" id="name" type="text" placeholder="Florent" name="name">
-                    </div>
-                </div>
-                <div class="field">
-                    <label class="label">Votre prénom</label>
-                    <div class="control">
-                        <input class="input" id="firstname" type="text" placeholder="Patrick" name="firstname">
-                    </div>
-                </div>
-                <div class="field">
-                    <label class="label">Votre email</label>
-                    <div class="control">
-                        <input class="input" id="email" type="text" placeholder="coucou@cmoi.com" name="email">
-                    </div>
-                </div>
-                <div class="field">
-                    <label class="label">Votre message</label>
-                    <div class="control">
-                        <textarea class="textarea" id="message" placeholder="C'est à toi de jouer" name="message"></textarea>
-                    </div>
-                </div>
-            </form>
-            <button class="button is-link" id="send-email">Envoyez !</button>
-        </div>
-        <div class="footer-informations">
-            <p>Patlevel13</p>
-            <p>35 rue du code web</p>
-            <p>69069 Quelque part</p>
-        </div>
+      <h2 class="heading-site">Contactez-moi</h2>
+      <div class="footer-contact-form">
+        <form action="">
+          <div class="field">
+            <label class="label">Votre nom</label>
+            <div class="control">
+              <input class="input" id="name" type="text" placeholder="Florent" name="name" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Votre prénom</label>
+            <div class="control">
+              <input class="input" id="firstname" type="text" placeholder="Patrick" name="firstname" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Votre email</label>
+            <div class="control">
+              <input class="input" id="email" type="text" placeholder="coucou@cmoi.com" name="email" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Votre message</label>
+            <div class="control">
+              <textarea class="textarea" id="message" placeholder="C'est à toi de jouer" name="message"></textarea>
+            </div>
+          </div>
+        </form>
+        <button class="button is-link" id="send-email">Envoyez !</button>
+      </div>
+      <div class="footer-informations">
+        <p>Patlevel13</p>
+        <p>35 rue du code web</p>
+        <p>69069 Quelque part</p>
+      </div>
     </div>
     <div>
-        <div class="resaux-sociaux">
-            <a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="tiktok"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
+      <div class="resaux-sociaux">
+        <a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
     </div>
+  </div>
 
-</div>
-
-    <!---->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="src/js/main.js"></script>
+  <!---->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="src/js/main.js"></script>
 </body>
+
 </html>

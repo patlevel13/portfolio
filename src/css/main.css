@@ -44,6 +44,10 @@ body{
 }
 
 /*banner*/
+.banner{
+    margin: 0;
+    padding: 0;
+}
 .banner .banner-img{
     position: relative;
 }
@@ -57,9 +61,10 @@ body{
     color: #fff;
 }
 .subtitle{
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 10px;
 }
+
 
 
 /*about*/
@@ -111,19 +116,44 @@ body{
     width:100px ;
 }
 /* modal*/
+.modal-background{
+    background: #000;
+}
+
 .own-modal{
     padding: 120px 50px 0 0;
 }
 .modal-content{
-    width: 100%;
     padding: 10px;
+}
+/* slide */
+swiper-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+swiper-slide {
+    width: 50%;
+    height: 50%;
+    background-position: center;
+    /* background-size: cover; */
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+}
+/*------ canvas ---------*/
+canvas{
+    z-index: 0;
+    width: 100%;
 }
 
 /* responsive exemple*/
 @media screen and (max-width: 400px) {
-    #open-modal {
+    /* #open-modal {
         display: none;
-    }
+    } */
     #accueil{
         font-size: 0.8rem;
         align-items: center;
