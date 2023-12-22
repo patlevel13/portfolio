@@ -116,9 +116,6 @@ body{
     width:100px ;
 }
 /* modal*/
-.modal-background{
-    background: #000;
-}
 
 .own-modal{
     padding: 120px 50px 0 0;
@@ -130,13 +127,12 @@ body{
 swiper-container {
     display: block;
     width: 100%;
-    height: 100%;
 }
 swiper-slide {
     width: 50%;
     height: 50%;
     background-position: center;
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 swiper-slide img {
@@ -145,9 +141,13 @@ swiper-slide img {
 }
 /*------ canvas ---------*/
 canvas{
-    z-index: 0;
-    width: 100%;
+    display: block;
 }
+#c{
+    width: 100%;
+    height: 100%;
+}
+
 
 /* responsive exemple*/
 @media screen and (max-width: 400px) {

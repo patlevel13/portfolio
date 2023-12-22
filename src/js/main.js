@@ -14,7 +14,7 @@ $('#open-modal').click(function () {
 });
 // --------------effect matrix----------
 // geting canvas by Boujjou Achraf
-var c = document.getElementsById("matrix");
+var c = document.querySelector("#c");
 var ctx = c.getContext("2d");
 
 //making the canvas full screen
@@ -43,7 +43,7 @@ function draw()
     ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
     ctx.fillRect(0, 0, c.width, c.height);
 
-    ctx.fillStyle = "#f4427d";//green text
+    ctx.fillStyle = "green";//green text
     ctx.font = font_size + "px arial";
     //looping over drops
     for(var i = 0; i < drops.length; i++)
@@ -56,13 +56,13 @@ function draw()
         //sending the drop back to the top randomly after it has crossed the screen
         //adding a randomness to the reset to make the drops scattered on the Y axis
         if(drops[i]*font_size > c.height && Math.random() > 0.975)
-            drops[i] = 0;
+            drops[i] = -2;
 
         //incrementing Y coordinate
         drops[i]++;
     }
 }
-setInterval(draw, 35);
+setInterval(draw, 30);
 /*---------------- fin effet matrix --------------
 
 /*send mail with ajax*/

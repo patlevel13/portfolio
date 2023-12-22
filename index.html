@@ -46,13 +46,13 @@
 
   <!--modal-->
   <div class="modal own-modal" id="modal-to-open">
-    <div class="modal-background" ></div>
-    <!-- <canvas id="matrix"></canvas> -->
-    <div class="modal-content" >
+    
+    <div class="modal-background"><canvas id="c"></canvas></div>
+    <div class="modal-content">
+      
       <button class="delete is-large" aria-label="close" id="close-modal"></button>
       <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30" effect="fade"
         navigation="true">
-        
         <swiper-slide>
           <img src="src/caroussel/a-min.jpg" alt="" />
         </swiper-slide>
@@ -72,8 +72,9 @@
         <swiper-slide>
           <img src="src/caroussel/f-min.jpg" alt="" />
         </swiper-slide>
-
+    
       </swiper-container>
+    
     </div>
   </div>
 
@@ -215,12 +216,14 @@
       </div>
     </div>
   </div>
+  
 
   <!---->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="src/js/main.js"></script>
+  
 </body>
 
 </html>
