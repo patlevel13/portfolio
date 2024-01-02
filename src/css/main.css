@@ -6,6 +6,10 @@
 body{
     background: radial-gradient(rgb(173, 127, 67),chocolate);
 }
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 
 /*header*/
 .header {
@@ -64,7 +68,6 @@ body{
     padding-top: 100px;
     padding-bottom: 10px;
 }
-
 
 
 /*about*/
@@ -150,16 +153,33 @@ canvas{
 
 
 /* responsive exemple*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 520px) {
     /* #open-modal {
         display: none;
     } */
-    #accueil{
+    #header-menu{
+        font-size: 0.6rem;
+        align-items: center;
+        margin-top: -25px;
+    }
+    .header .header-logo{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    #header-menu{
         font-size: 0.8rem;
         align-items: center;
     }
-    #header-menu{
-        margin-top: -25px;
+    /* .header .header-logo{
+        font-size: 1rem; */
     }
-
 }
+/* .header .header-logo {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+    margin-left: 30px;
+    font-size: 2rem;
+    margin-top: 10px;
+} */
